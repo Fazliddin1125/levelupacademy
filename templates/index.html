@@ -1,0 +1,948 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--
+    - primary meta tag
+  -->
+  <title>Welcome to the next level.</title>
+  <meta name="title" content="Level Up Academy">
+  <meta name="description" content="Welcome to next level">
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="{% static 'images/logo.png' %}" type="png">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  <link rel="stylesheet" href="{% static 'css/swiper-bundle.min.css' %}">
+
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="{% static 'https://fonts.googleapis.com' %}">
+  <link rel="preconnect" href="{% static 'https://fonts.gstatic.com' %}" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700;800&family=Poppins:wght@400;500&display=swap"
+    rel="stylesheet">
+
+  <!--
+    - preload images
+  -->
+
+
+</head>
+
+<body id="top">
+
+  <!--
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#" class="logo">
+        <img src="{% static 'images/logo.png' %}" width="80" height="50" alt="LevelUp Logo">
+      </a>
+
+      <nav class="navbar" data-navbar>
+
+        <div class="wrapper">
+          <a href="#" class="logo">
+            <img src="{% static 'images/logo.png' %}" width="50" height="25" alt="LevelUp logo">
+          </a>
+
+          <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
+        </div>
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="#home" class="navbar-link" data-nav-link>Home</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#advantage" class="navbar-link" data-nav-link>Advantage</a>
+          </li>
+          <li class="navbar-item">
+            <a href="#about" class="navbar-link" data-nav-link>About</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#courses" class="navbar-link" data-nav-link>Courses</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#team" class="navbar-link" data-nav-link>Team</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#footer" class="navbar-link" data-nav-link>Contact</a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <div class="header-actions">
+
+
+
+        <a href="#register" class="btn has-before">
+          <span class="span">Try for free</span>
+
+          <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+        </a>
+
+        <button class="header-action-btn" aria-label="open menu" data-nav-toggler>
+          <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!--
+        - #HERO
+      -->
+
+      <section  class="section  wrapper-one hero has-bg-image" id="home" aria-label="home"
+        >
+
+        <div class="container">
+
+          <div class="hero-content">
+
+            <h1 class="h1 section-title">
+              Welcome to <span class="span">Next Level</span>
+            </h1>
+
+            <p class="hero-text">
+              Learn today, succeed tomorrow!
+            </p>
+
+            <a href="#register" class="btn has-before">
+              <span class="span">Find courses</span>
+
+              <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+            </a>
+
+          </div>
+
+
+
+        </div>
+      </section>
+
+
+
+
+
+      <!--
+        - #CATEGORY
+      -->
+
+      <section class="section advantage" id="advantage" aria-label="advantage">
+        <div class="container">
+
+          <p class="section-subtitle">advantage</p>
+
+          <h2 class="h2 section-title">
+            Why should you choose us?
+          </h2>
+
+          <p  class="section-text">
+            Each of our students will have the following advantages
+          </p>
+
+          <ul class="grid-list">
+
+
+
+            <li>
+              <div class="category-card  card" style="--color: 229, 75%, 58%">
+
+                <div class="card-icon">
+                  <img src="./assets/images/3009952.png" width="40" height="40" loading="lazy"
+                    alt="Non-Degree Programs" class="img">
+                </div>
+
+                <h3 class="h3">
+                  <a style="color: #FFF;" href="#" class="card-title">Bepul co-working hududlar</a>
+                </h3>
+
+                <p style="color: #FFF;" class="card-text">
+                  Level Upda siz uchun shinam co-working hududlar yaratilgan
+                </p>
+
+
+
+              </div>
+            </li>
+
+            <li>
+              <div class="category-card card " style="--color: 229, 75%, 58%">
+
+                <div class="card-icon">
+                  <img src="{% static 'images/classroom.png' %}" width="40" height="40" loading="lazy"
+                    alt="Off-Campus Programs" class="img">
+                </div>
+
+                <h3 class="h3">
+                  <a href="#" style="color: #FFF;" class="card-title">Qo'shimcha ustoz bilan bepul darslar</a>
+                </h3>
+
+                <p style="color: #FFF;" class="card-text">
+                  Bizning qo’shimcha ustozlarimiz sizga yordam berishga doim tayyor
+                </p>
+
+
+
+              </div>
+            </li>
+
+            <li>
+              <div class="category-card card" style="--color: 229, 75%, 58%">
+
+                <div class="card-icon">
+                  <img style="color: #FFF;" src="{% static 'images/webinar.png' %}" width="40" height="40" loading="lazy"
+                    alt="Hybrid Distance Programs" class="img">
+                </div>
+
+                <h3 class="h3">
+                  <a href="#" style="color: #FFF;" class="card-title">Bizdagi gibrid o’qitish tizimi</a>
+                </h3>
+
+                <p style="color: #FFF;" class="card-text">
+                  Zamovaviy darslik va kitoblar va online platforma
+                </p>
+
+
+
+              </div>
+            </li>
+
+            <li>
+              <div class="category-card card" style="--color: 229, 75%, 58%">
+
+               <div class="card-icon">
+                  <img src="{% static 'images/location1.png' %}" width="40" height="40" loading="lazy"
+                    alt="Online Degree Programs" class="img">
+                </div>
+
+                <h3 class="h3">
+                  <a href="#" style="color: #FFF;" class="card-title">Ta'lim Qulay joylashuv</a>
+                </h3>
+
+                <p style="color: #FFF;" class="card-text">
+                  Bizning Adnijon shahrida qulay hududda joylashgan 2 ta filialimiz bor
+                </p>
+</div>
+            </li>
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <section class="section" id="about" aria-label="about">
+        <div class="about-container">
+          <p class="section-subtitle">About us</p>
+
+          <h2 class="h2 section-title">
+            About us and our location
+          </h2>
+
+          <p class="section-text">
+
+          </p>
+          <div style="padding: 50px 40px;" class="about-content">
+            <div class="one-about">
+              <h2 class="h2 section-title">
+                We have been providing quality <span class="span">training</span> for 2 years </h2>
+
+              <p class="section-text">
+                Welcome to next level
+              </p>
+
+              <ul class="about-list">
+
+                <li class="about-item">
+                  <ion-icon name="checkmark-done-outline" aria-hidden="true"></ion-icon>
+
+                  <span class="span">Professional Teachers</span>
+                </li>
+
+                <li class="about-item">
+                  <ion-icon name="checkmark-done-outline" aria-hidden="true"></ion-icon>
+
+                  <span class="span">Online Remote Learning</span>
+                </li>
+
+                <li class="about-item">
+                  <ion-icon name="checkmark-done-outline" aria-hidden="true"></ion-icon>
+
+                  <span class="span">Quality Education</span>
+                </li>
+
+              </ul>
+            </div>
+            <div class="location">
+              <div class="card" id="map">
+                <div class="mapouter">
+                  <div class="gmap_canvas"><iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no"
+                      marginheight="0" marginwidth="0"
+                      src="https://maps.google.com/maps?width=100%&amp;height=422&amp;hl=en&amp;q=Andijan LevelUp Academy&amp;t=&amp;z=16&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a
+                      href="https://connectionsgame.org/">Connections Unlimited</a></div>
+                  <style>
+                    .mapouter {
+                      position: relative;
+                      text-align: right;
+                      width: 100%;
+                      height: 422px;
+                    }
+
+                    .gmap_canvas {
+                      overflow: hidden;
+                      background: none !important;
+                      width: 100%;
+                      height: 422px;
+                    }
+
+                    .gmap_iframe {
+                      height: 422px !important;
+                    }
+                  </style>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="container">
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="stats-card" style="--color: 170, 75%, 41%">
+                <h3 class="card-title">600+</h3>
+
+                <p class="card-text">Student Enrolled</p>
+              </div>
+            </li>
+
+            <li>
+              <div class="stats-card" style="--color: 351, 83%, 61%">
+                <h3 class="card-title">50+</h3>
+
+                <p class="card-text">Class Completed</p>
+              </div>
+            </li>
+
+            <li>
+              <div class="stats-card" style="--color: 260, 100%, 67%">
+                <h3 class="card-title">100%</h3>
+
+                <p class="card-text">Satisfaction Rate</p>
+              </div>
+            </li>
+
+            <li>
+              <div class="stats-card" style="--color: 42, 94%, 55%">
+                <h3 class="card-title">354+</h3>
+
+                <p class="card-text">Top Instructors</p>
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+
+      <!--
+        - #COURSE
+      -->
+
+      <section class="section course" id="courses" aria-label="course">
+        <div class="container">
+
+          <p class="section-subtitle">Popular Courses</p>
+
+          <h2 class="h2 section-title">Pick A Course To Get Started</h2>
+          <div class="slide-container swiper">
+            <div class="slide-content">
+              <div class="card-wrapper swiper-wrapper">
+                <div class="course-card swiper-slide">
+
+                  <figure class="card-banner img-holder" style="--width: 370; --height: 220;">
+
+                    <img src="{% static 'images/white4.jpg' %}" width="370" height="220" loading="lazy"
+                      alt="Build Responsive Real- World Websites with HTML and CSS" class="img-cover">
+                  </figure>
+
+                  <div class="abs-badge">
+                    <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                    <span class="span">3 months</span>
+                  </div>
+
+                  <div class="card-content">
+
+                    <span class="badge">Beginner</span>
+
+                    <h3 class="h3">
+                      <a href="" class="card-title">English Beginner</a>
+                    </h3>
+                    <div style="text-align: center;" class="wrapper">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur, fuga?
+                    </div>
+
+
+
+
+                    <ul class="card-meta-list">
+
+                      <li class="card-meta-item">
+
+
+                        <span class="span">2 hours</span>
+                      </li>
+
+                      <li class="card-meta-item">
+
+
+                        <span class="span">300,00 sum</span>
+                      </li>
+
+                    </ul>
+
+                  </div>
+
+                </div>
+                 <div class="course-card swiper-slide">
+
+                  <figure class="card-banner img-holder" style="--width: 370; --height: 220;">
+
+                    <img src="{% static 'images/white4.jpg' %}" width="370" height="220" loading="lazy"
+                      alt="Build Responsive Real- World Websites with HTML and CSS" class="img-cover">
+                  </figure>
+
+                  <div class="abs-badge">
+                    <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                    <span class="span">3 months</span>
+                  </div>
+
+                  <div class="card-content">
+
+                    <span class="badge">Beginner</span>
+
+                    <h3 class="h3">
+                      <a href="" class="card-title">English Beginner</a>
+                    </h3>
+                    <div style="text-align: center;" class="wrapper">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur, fuga?
+                    </div>
+
+
+
+
+                    <ul class="card-meta-list">
+
+                      <li class="card-meta-item">
+
+
+                        <span class="span">2 hours</span>
+                      </li>
+
+                      <li class="card-meta-item">
+
+
+                        <span class="span">300,00 sum</span>
+                      </li>
+
+                    </ul>
+
+                  </div>
+
+                </div>
+                 <div class="course-card swiper-slide">
+
+                  <figure class="card-banner img-holder" style="--width: 370; --height: 220;">
+
+                    <img src="{% static 'images/white4.jpg' %}" width="370" height="220" loading="lazy"
+                      alt="Build Responsive Real- World Websites with HTML and CSS" class="img-cover">
+                  </figure>
+
+                  <div class="abs-badge">
+                    <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                    <span class="span">3 months</span>
+                  </div>
+
+                  <div class="card-content">
+
+                    <span class="badge">Beginner</span>
+
+                    <h3 class="h3">
+                      <a href="" class="card-title">English Beginner</a>
+                    </h3>
+                    <div style="text-align: center;" class="wrapper">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur, fuga?
+                    </div>
+
+
+
+
+                    <ul class="card-meta-list">
+
+                      <li class="card-meta-item">
+
+
+                        <span class="span">2 hours</span>
+                      </li>
+
+                      <li class="card-meta-item">
+
+
+                        <span class="span">300,00 sum</span>
+                      </li>
+
+                    </ul>
+
+                  </div>
+
+                </div>
+                 <div class="course-card swiper-slide">
+
+                  <figure class="card-banner img-holder" style="--width: 370; --height: 220;">
+
+                    <img src="{% static 'images/white4.jpg' %}" width="370" height="220" loading="lazy"
+                      alt="Build Responsive Real- World Websites with HTML and CSS" class="img-cover">
+                  </figure>
+
+                  <div class="abs-badge">
+                    <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                    <span class="span">3 months</span>
+                  </div>
+
+                  <div class="card-content">
+
+                    <span class="badge">Beginner</span>
+
+                    <h3 class="h3">
+                      <a href="" class="card-title">English Beginner</a>
+                    </h3>
+                    <div style="text-align: center;" class="wrapper">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur, fuga?
+                    </div>
+
+
+
+
+                    <ul class="card-meta-list">
+
+                      <li class="card-meta-item">
+
+
+                        <span class="span">2 hours</span>
+                      </li>
+
+                      <li class="card-meta-item">
+
+
+                        <span class="span">300,00 sum</span>
+                      </li>
+
+                    </ul>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+
+            <div class="swiper-button-next swiper-nav-btn"></div>
+            <div class="swiper-button-prev swiper-nav-btn"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+
+
+
+
+            </section>
+
+          </div>
+
+
+
+
+        </div>
+      </section>
+
+
+
+
+
+      <!--
+        - #VIDEO
+      -->
+      <section class="section" id="register" aria-label="register">
+        <div class="about-container">
+          <p class="section-subtitle">Register</p>
+
+          <h2 class="h2 section-title">
+            Choose your best course
+          </h2>
+
+        </div>
+        <div class="container">
+          <form  method="">
+            <div class="form-title">
+              <div class="inner">
+
+                <form action="">
+                  <h3>Register now</h3>
+                  <div class="form-holder">
+
+                    <input required type="text" class="form-control" placeholder="Fullname">
+                  </div>
+                  <div class="form-holder">
+
+                    <input required type="text" class="form-control" placeholder="Phone Number">
+                  </div>
+                  <div class="form-holder">
+
+                    <input type="email" class="form-control" placeholder="EMail">
+                  </div>
+                  <div  class="form-holder">
+                    <select required class="course-select form-control" name="" id="">
+                      <option class="course-option form-control"  value="">Course</option>
+                      <option class="course-option form-control"  value="">Elementry</option>
+                      <option class="course-option form-control"  value="">Course</option>
+                      <option class="course-option form-control"  value="">Course</option>
+                      <option class="course-option form-control"  value="">Course</option>
+                      <option class="course-option form-control"  value="">Course</option>
+                    </select>
+                  </div>
+
+                  <button class="button-reg">
+                    <span>SEND</span>
+                  </button>
+                </form>
+                <img style="margin-left: 15px;" src="{% static 'images/image-2.png' %}" alt="" class="image-2">
+              </div>
+            </div>
+          </form>
+
+
+        </div>
+      </section>
+
+
+
+
+
+
+      <!--
+        - #STATE
+      -->
+
+
+
+      <!--
+        - #TEAM
+      -->
+
+      <section class="section course" id="team" aria-label="team">
+        <div class="container">
+
+          <p class="section-subtitle">OUR TEAM</p>
+
+          <h2 class="h2 section-title">OUR PROFESSIONAL TEAM</h2>
+          <div id="Carousel-slider">
+            <section>
+              <div class="Carousel-slider">
+                <!-- Background Images div -->
+
+                <div class="slider-item" data-href="#">
+                  <div class="">
+
+                    <img class="img " src="{% static 'images/avatar-5.png' %}" alt="">
+                  </div>
+                </div>
+                <div class="slider-item" data-href="#">
+                  <div class="">
+
+                    <img class="img " src="{% static 'images/avatar-3.png' %}" alt="">
+                  </div>
+                </div>
+                <div class="slider-item" data-href="#">
+                  <div class="">
+
+                    <img class="img " src="{% static 'images/avatar-4.png' %}" alt="">
+                  </div>
+                </div>
+                <div class="slider-item" data-href="#">
+                  <div class="">
+
+                    <img class="img " src="{% static 'images/avatar-2.png' %}" alt="">
+                  </div>
+                </div>
+                <div class="slider-item" data-href="#">
+                  <div class="">
+
+                    <img class="img " src="{% static 'images/avatar-4.png' %}" alt="">
+                  </div>
+                </div>
+
+
+                <!-- Background Images div End -->
+              </div>
+            </section>
+          </div>
+
+
+
+        </div>
+      </section>
+
+
+
+    </article>
+  </main>
+
+
+
+
+
+  <!--
+    - #FOOTER
+  -->
+
+  <footer  class="footer" style="background-image: url('{% static 'images/footer-bg.png' %})">
+
+    <div id="footer" class="footer-top section">
+      <div class="container grid-list">
+
+        <div class="footer-brand">
+
+          <a href="#" class="logo">
+            <img src="{% static 'images/logo.png' %}" width="50" height="25" alt="LevelUp logo">
+          </a>
+
+
+
+          <div class="wrapper">
+            <span class="span">Address:</span>
+
+            <address class="address">Andijan</address>
+          </div>
+
+          <div class="wrapper">
+            <span class="span">Call:</span>
+
+            <a href="tel:+998951100014" class="footer-link">+998 95 110 00 14</a>
+          </div>
+          <div class="wrapper">
+            <span class="span">Call:</span>
+
+            <a href="tel:+998933024498" class="footer-link">+998 93 302 44 98</a>
+          </div>
+
+          <div class="wrapper">
+            <span class="span">Email:</span>
+
+            <a href="mailto:example@gmail.com" class="footer-link">info@levelup.com</a>
+          </div>
+
+        </div>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Online Platform</p>
+          </li>
+
+          <li>
+            <a href="#about" class="footer-link">About</a>
+          </li>
+
+          <li>
+            <a href="#courses" class="footer-link">Courses</a>
+          </li>
+
+          <li>
+            <a href="" class="footer-link">Instructor</a>
+          </li>
+
+          <li>
+            <a href="" class="footer-link">Events</a>
+          </li>
+
+
+
+
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Links</p>
+          </li>
+
+          <li>
+            <a href="" class="footer-link">Contact Us</a>
+          </li>
+
+          <li>
+            <a href="" class="footer-link">Gallery</a>
+          </li>
+
+          <li>
+            <a href="" class="footer-link">News & Articles</a>
+          </li>
+
+          <li>
+            <a href="" class="footer-link">FAQ's</a>
+          </li>
+
+          <li>
+            <a href="" class="footer-link">Sign In/Registration</a>
+          </li>
+
+          <li>
+            <a href="" class="footer-link">Coming Soon</a>
+          </li>
+
+        </ul>
+
+        <div class="footer-list">
+
+          <p class="footer-list-title">Contacts</p>
+
+
+
+          <ul class="social-list">
+
+            <li>
+              <a href="" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="" class="social-link">
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="" class="social-link">
+                <ion-icon name="logo-youtube"></ion-icon>
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+          Copyright 2023 All Rights Reserved by <a href="#" class="copyright-link">Level Up</a>
+        </p>
+
+      </div>
+    </div>
+
+  </footer>
+
+
+
+
+
+  <!--
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn" aria-label="back top top" data-back-top-btn>
+    <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+  </a>
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js" defer></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script src="{% static 'js/swiper-bundle.min.js' %}"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/micro-slider@1.0.9/dist/micro-slider.min.js"></script>
+  <script src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
+</body>
+
+</html>
