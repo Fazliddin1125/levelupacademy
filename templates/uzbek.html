@@ -10,7 +10,7 @@
   <!--
     - primary meta tag
   -->
-  <title>Welcome to the next level. English</title>
+  <title>Level Up Academy</title>
   <meta name="title" content="Level Up Academy">
   <meta name="description" content="Welcome to next level">
 
@@ -70,39 +70,38 @@
         <ul class="navbar-list">
 
           <li class="navbar-item">
-            <a href="#home" class="navbar-link" data-nav-link>Home</a>
+            <a href="#home" class="navbar-link" data-nav-link>Asosiy</a>
           </li>
 
           <li class="navbar-item">
-            <a href="#advantage" class="navbar-link" data-nav-link>Advantage</a>
+            <a href="#advantage" class="navbar-link" data-nav-link>Afzalliklar</a>
           </li>
           <li class="navbar-item">
-            <a href="#about" class="navbar-link" data-nav-link>About</a>
-          </li>
-
-          <li class="navbar-item">
-            <a href="#courses" class="navbar-link" data-nav-link>Courses</a>
+            <a href="#about" class="navbar-link" data-nav-link>Haqida</a>
           </li>
 
           <li class="navbar-item">
-            <a href="#team" class="navbar-link" data-nav-link>Team</a>
+            <a href="#courses" class="navbar-link" data-nav-link>Kurslar</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#team" class="navbar-link" data-nav-link>Jamoa</a>
           </li>
 
           <li class="navbar-item">
             <a href="{% url 'oferta' %}" class="navbar-link" data-nav-link>Oferta</a>
           </li>
-           <li class="navbar-item">
-            <span id="l-link"  href="#footer" class="navbar-link">
-             <div  class="def-lang"  >ENG <img src="{% static 'images/eng.png' %}" alt="eng"> </div>
+          <li class="navbar-item">
+            <span id="l-link"  href="#footer" class="navbar-link" >
+             <div  class="def-lang"  >UZ<img src="{% static 'images/uz.png' %}" alt="uz"> </div>
               <div class="box-lang">
-                <a href="{% url 'uzbek' %}"><div class="set-lang" >UZ <img src="{% static 'images/uz.png' %}" alt="uz"> </div></a>
-                <a href="{%  url 'german' %}"><div class="set-lang" >GER <img src="{% static 'images/ger.png' %}" alt="GERMAN"></div>  </a>
+                <a href="{% url 'english' %}"><div class="set-lang" >ENG <img src="{% static 'images/eng.png' %}" alt="eng"> </div></a>
+                <a href="{%  url 'german' %}"><div class="set-lang" >GER <img src="{% static 'images/ger.png' %}" alt="ger"> </div></a>
                
               </div>
               
             </span>
           </li>
-
         </ul>
 
       </nav>
@@ -112,7 +111,7 @@
 
 
         <a href="#register" class="btn has-before">
-          <span class="span">Try for free</span>
+          <span class="span">Birinchi darsga yozilish</span>
 
           <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
         </a>
@@ -178,14 +177,14 @@
       <section class="section advantage" id="advantage" aria-label="advantage">
         <div class="container">
 
-          <p class="section-subtitle">advantage</p>
+          <p class="section-subtitle">afzalliklar</p>
 
           <h2 class="h2 section-title">
-            Why should you choose us?
+            Nega bizni tanlash kerak ?
           </h2>
 
           <p  class="section-text">
-            Each of our students will have the following advantages
+            Har bir o'quvchi quydagi afzalliklarga ega bo'ladi.
           </p>
 
           <ul class="grid-list">
@@ -201,11 +200,11 @@
                 </div>
 
                 <h3 class="h3">
-                  <a style="color: #FFF;" href="#" class="card-title">Free co-working areas</a>
+                  <a style="color: #FFF;" href="#" class="card-title">Bepul co-working hududlar</a>
                 </h3>
 
                 <p style="color: #FFF;" class="card-text">
-                  Level Up has created cozy co-working areas for you
+                  Level Upda siz uchun shinam co-working hududlar yaratilgan
                 </p>
 
 
@@ -222,11 +221,11 @@
                 </div>
 
                 <h3 class="h3">
-                  <a href="#" style="color: #FFF;" class="card-title">Textbooks are provided free of charge by the educational center.</a>
+                  <a href="#" style="color: #FFF;" class="card-title">Darsliklar o'quv markaz tomonidan bepul taqdim etiladi.</a>
                 </h3>
 
                 <p style="color: #FFF;" class="card-text">
-                  Modern textbooks and books
+                  Zamovaviy darsliklar va kitoblar
                 </p>
 
 
@@ -244,11 +243,11 @@
                 </div>
 
                 <h3 class="h3">
-                  <a href="#" style="color: #FFF;" class="card-title">Free lessons with an additional teacher</a>
+                  <a href="#" style="color: #FFF;" class="card-title">Qo'shimcha ustoz bilan bepul darslar</a>
                 </h3>
 
                 <p style="color: #FFF;" class="card-text">
-                  Our additional teachers are always ready to help you
+                  Bizning qo’shimcha ustozlarimiz sizga yordam berishga doim tayyor
                 </p>
 
 
@@ -265,11 +264,11 @@
                 </div>
 
                 <h3 class="h3">
-                  <a href="#" style="color: #FFF;" class="card-title">Convenient location for education</a>
+                  <a href="#" style="color: #FFF;" class="card-title">Ta'lim uchun qulay joylashuv</a>
                 </h3>
 
                 <p style="color: #FFF;" class="card-text">
-                  We have 2 branches conveniently located in Adnijan
+                  Bizning Adnijon shahrida qulay hududda joylashgan 2 ta filialimiz mavjud
                 </p>
 </div>
             </li>
@@ -288,10 +287,10 @@
 
       <section class="section" id="about" aria-label="about">
         <div class="about-container">
-          <p class="section-subtitle">About us</p>
+          <p class="section-subtitle">Biz haqimizda</p>
 
           <h2 class="h2 section-title">
-            About us
+            Biz haqimizda
           </h2>
 
           <p class="section-text">
@@ -301,38 +300,49 @@
 
             <div class="one-about" >
             <b class="about-text" >
-              In a globalized world, the ability to speak multiple languages ​​is crucial. Our language school has made it its mission to help students explore and conquer the worlds of German and English. With a dedicated team of qualified teachers and a unique learning approach, we create an inspiring environment for language learning.
+              Globallashgan dunyoda bir nechta tillarda gaplasha olish juda muhimdir. Til maktabimiz talabalarga nemis va ingliz tillarini o'rganish va zabt etishga yordam berishni o'z oldiga maqsad qilib qo'ygan. Malakali o'qituvchilarning bag'ishlangan jamoasi va o'ziga xos o'rganish yondashuvi bilan biz til o'rganish uchun ilhomlantiruvchi muhit yaratamiz.
+
             </b>
              <p class="about-text" >
-               1. <b>Unique teaching team</b>:
-               Our school boasts a highly qualified and motivated team of teachers who are not only experts in German and English, but also share a passion for teaching and student success. Each teacher brings their unique perspective and methodology to provide students with a well-rounded learning experience.
+               1. <b> Noyob o'qituvchilar jamoasi</b>:
+
+Bizning maktabimiz nafaqat nemis va ingliz tillari bo'yicha mutaxassislar, balki o'qituvchilik va talabalar muvaffaqiyatiga ishtiyoqi bo'lgan yuqori malakali va g'ayratli o'qituvchilar jamoasiga ega. Har bir o'qituvchi talabalarga har tomonlama o'rganish tajribasini taqdim etish uchun o'ziga xos nuqtai nazar va metodologiyani olib keladi.
+
              </p>
               <p class="about-text" >
-                2. <b>Intensive German courses</b>:
-                Our German courses are designed to accompany students on their way to effortless mastery of the German language. From beginner to advanced courses, we offer a wide range of options that allow students to improve their language skills. Small classes promote individual attention and enable active participation of the learners.              </p>
-              <p class="about-text" >
-                3. <b>English for all levels</b>:
-                Whether beginner or advanced, our English lessons are designed to prepare students for a world where English plays a key role. Through innovative teaching methods, communicative activities and realistic language applications, we promote not only grammatical accuracy but also oral communication skills.
+                2. <b>Intensiv nemis tili kurslari</b>:
+
+Bizning nemis tili kurslarimiz talabalarga nemis tilini oson o'zlashtirish yo'lida hamrohlik qilish uchun mo'ljallangan. Boshlang'ich kurslardan tortib to yuqori darajali kurslargacha talabalarga til ko'nikmalarini oshirishga imkon beruvchi keng imkoniyatlarni taklif etamiz. Kichik sinflar individual e'tiborni rivojlantiradi va o'quvchilarning faol ishtirokini ta'minlaydi.
+
               </p>
               <p class="about-text" >
-                4. <b>Cultural immersion</b>:
-                Language is more than just grammar and vocabulary; it is a window into a culture. Our school integrates cultural elements into lessons to give students a comprehensive understanding of languages. From cultural events to interactive projects, we create a learning environment that goes beyond the classroom.
+                3.<b>Barcha darajalar uchun ingliz tili</b>:
+
+Boshlang'ich yoki yuqori darajali ingliz tili darslarimiz talabalarni ingliz tili asosiy rol o'ynaydigan dunyoga tayyorlash uchun mo'ljallangan. Innovatsion o'qitish usullari, kommunikativ faoliyat va real til ilovalari orqali biz nafaqat grammatik aniqlikni, balki og'zaki muloqot ko'nikmalarini ham targ'ib qilamiz.
+
+              </p>
+              <p class="about-text" >
+                4.<b>Madaniy immersion</b>:
+
+Til shunchaki grammatika va lug'at emas; bu madaniyatga bir oynadir. Maktabimiz o‘quvchilarga tillar haqida to‘liq tushuncha berish uchun madaniyat elementlarini darslarga kiritadi. Madaniy tadbirlardan tortib, interfaol loyihalargacha, biz sinfdan tashqariga chiqadigan o'quv muhitini yaratamiz.
+
               </p>
 
 <p class="about-text" >
-  5. <b>Modern learning resources</b>:
-  Our school continually invests in the latest technology and learning tools to ensure students have the best possible resources for their language journey. Interactive learning platforms, multimedia resources and digital learning tools support traditional teaching methods and offer a versatile learning environment.
+  5.<b>Zamonaviy ta’lim resurslari</b>:
+
+Talabalar til sayohati uchun eng yaxshi resurslarga ega bo'lishini ta'minlash uchun maktabimiz doimiy ravishda eng yangi texnologiyalar va o'quv vositalariga sarmoya kiritadi. Interfaol ta'lim platformalari, multimedia resurslari va raqamli o'quv vositalari an'anaviy o'qitish usullarini qo'llab-quvvatlaydi va turli xil o'quv muhitini taklif qiladi.
+
 </p>
 <p class="about-text" >
-  6. <b>Community and support</b>:
-  We understand that language learning is a journey that best takes place in a supportive community. Our school promotes exchange among students to create a sense of community where learning is fun and successes are celebrated together.
+  6.<b>Hamjamiyat va yordam</b>:
+
+Biz tushunamizki, til o‘rganish eng yaxshi qo‘llab-quvvatlovchi jamiyatda amalga oshiriladigan sayohatdir. Bizning maktabimiz o'qish qiziqarli va muvaffaqiyatlar birgalikda nishonlanadigan jamiyat tuyg'usini yaratish uchun talabalar o'rtasida almashinuvni targ'ib qiladi.
+
 </p>
               <p class="about-text" >
-
-<b>Our language school is more than just a place to learn; it is a bridge to new horizons, cultures and possibilities. We cordially invite everyone who would like to discover the fascinating worlds of German and English to join our lively and committed language community. Welcome to our language school – where languages ​​come to life!</b>
-</p>
-
-
+                <b>Bizning til maktabimiz shunchaki o'rganish joyi emas; bu yangi urflar, madaniyatlar va imkoniyatlar uchun ko'prikdir. Biz nemis va ingliz tillarining qiziqarli dunyolarini kashf qilishni xohlovchilarning barchasini bizning yetuk va sodiq til hamjamiyatimizga qo'shilishga taklif qilamiz. Tillar jonlanadigan til maktabimizga xush kelibsiz!</b>
+              </p>
             </div>
 
           </div>
@@ -353,9 +363,9 @@
       <section class="section course" id="courses" aria-label="course">
         <div class="container">
 
-          <p class="section-subtitle">Popular Courses</p>
+          <p class="section-subtitle">Kurslar</p>
 
-          <h2 class="h2 section-title">Pick A Course To Get Started</h2>
+          <h2 class="h2 section-title">O'zingizga mos kursni tanlang</h2>
           <div class="slide-container swiper">
             <div class="slide-content">
               <div class="card-wrapper swiper-wrapper">
@@ -371,7 +381,7 @@
                   <div class="abs-badge">
                     <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
 
-                    <span class="span">{{ course.month|get_digit:0 }} months</span>
+                    <span class="span">{{ course.month|get_digit:0 }} oy</span>
                   </div>
 
                   <div class="card-content">
@@ -397,7 +407,7 @@
                       <li class="card-meta-item">
 
 
-                        <span class="span">{{ course.price|cut:".0" }} 000</span>
+                        <span class="span">{{ course.price|cut:".0" }} </span>
                       </li>
 
                     </ul>
@@ -437,10 +447,10 @@
       -->
       <section class="section" id="register" aria-label="register">
         <div class="about-container">
-          <p class="section-subtitle">Register</p>
+          <p class="section-subtitle">Ro'yxatdan o'tish</p>
 
           <h2 class="h2 section-title">
-            Choose your best course
+            Hoziroq ro'yxatdan o'ting
           </h2>
 
         </div>
@@ -452,14 +462,14 @@
 
                 <form method="post">
                   {% csrf_token %}
-                  <h3>Register now</h3>
+                  <h3>Ro'yxatdan o'tish</h3>
                   <div class="form-holder">
 
-                    <input required name="name" type="text" class="form-control" placeholder="Fullname">
+                    <input required name="name" type="text" class="form-control" placeholder="Ism Familiya">
                   </div>
                   <div class="form-holder">
 
-                    <input name="phone_number" required type="text" class="form-control" placeholder="Phone Number">
+                    <input name="phone_number" required type="text" class="form-control" placeholder="Telefon raqam">
                   </div>
                   <div class="form-holder">
 
@@ -474,7 +484,7 @@
                   </div>
 
                   <button type="submit" class="button-reg">
-                    <span>SEND</span>
+                    <span>Yuborish</span>
                   </button>
                 </form>
                 <img style="margin-left: 15px;" src="{% static 'images/image-2.png' %}" alt="" class="image-2">
@@ -504,9 +514,9 @@
       <section class="section course" id="team" aria-label="team">
         <div class="container">
 
-          <p class="section-subtitle">OUR TEAM</p>
+          <p class="section-subtitle">Jamoa</p>
 
-          <h2 class="h2 section-title">OUR PROFESSIONAL TEAM</h2>
+          <h2 class="h2 section-title">Bizning profisianal jamoa</h2>
           <div id="Carousel-slider">
             <section>
               <div class="Carousel-slider">
@@ -591,7 +601,7 @@
 
             <a href="tel:+998951100014" class="footer-link">+998 95 110 00 14</a>
           </div>
-          
+
 
           <div class="wrapper">
             <span class="span">Email:</span>

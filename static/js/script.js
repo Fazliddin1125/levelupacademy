@@ -140,7 +140,7 @@ const wrapperimg = () => {
   
       trav.innerHTML = "NEVER stop learning, because life never stops teaching"
       text.innerHTML = "Learning is the way to show our skills. Opening up to new worlds through learning every day is an important life development."
-      wrapper.style.backgroundImage = "url('static/images/white.jpg')";
+      wrapper.style.backgroundImage = "url('/static/images/white.jpg')";
       num = 1
     } else if (num === 1) {
       
@@ -152,9 +152,10 @@ const wrapperimg = () => {
       
       trav.innerHTML = "A little progress every day adds up to big results."
       text.innerHTML = "Development is the greatest journey of our life. Learning about ourselves, developing our skills and discovering new ways is still the main means of getting to know new worlds. Upgrade yourself every day, let yourself reach the highest levels"
-      wrapper.style.backgroundImage = "url('static/images/white2.jpg')";
+      wrapper.style.backgroundImage = "url('/static/images/white2.jpg')";
       num = 0
     }
+
 
   }, 5000);
 }

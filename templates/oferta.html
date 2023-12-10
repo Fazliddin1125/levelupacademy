@@ -1,0 +1,679 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--
+    - primary meta tag
+  -->
+  <title>Welcome to the next level. English</title>
+  <meta name="title" content="Level Up Academy">
+  <meta name="description" content="Welcome to next level">
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="{% static 'images/logo.png' %}" type="png">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  <link rel="stylesheet" href="{% static 'css/swiper-bundle.min.css' %}">
+
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="{% static 'https://fonts.googleapis.com' %}">
+  <link rel="preconnect" href="{% static 'https://fonts.gstatic.com' %}" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700;800&family=Poppins:wght@400;500&display=swap"
+    rel="stylesheet">
+
+  <!--
+    - preload images
+  -->
+
+
+</head>
+
+<body id="top">
+
+  <!--
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#" class="logo">
+        <img src="{% static 'images/logo.png' %}" width="80" height="50" alt="LevelUp Logo">
+      </a>
+
+      <nav class="navbar" data-navbar>
+
+        <div class="wrapper">
+          <a href="#" class="logo">
+            <img src="{% static 'images/logo.png' %}" width="50" height="25" alt="LevelUp logo">
+          </a>
+
+          <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
+        </div>
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="#home" class="navbar-link" data-nav-link>Home</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#advantage" class="navbar-link" data-nav-link>Advantage</a>
+          </li>
+          <li class="navbar-item">
+            <a href="#about" class="navbar-link" data-nav-link>About</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#courses" class="navbar-link" data-nav-link>Courses</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#team" class="navbar-link" data-nav-link>Team</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#footer" class="navbar-link" data-nav-link>Contact</a>
+          </li>
+           <li class="navbar-item">
+            <span id="l-link"  href="#footer" class="navbar-link">
+             <div  class="def-lang"  >ENG <img src="{% static 'images/eng.png' %}" alt="eng"> </div>
+              <div class="box-lang">
+                <a href="{% url 'uzbek' %}"><div class="set-lang" >UZ <img src="{% static 'images/uz.png' %}" alt="uz"> </div></a>
+                <a href="{%  url 'german' %}"><div class="set-lang" >GER <img src="{% static 'images/ger.png' %}" alt="GERMAN"></div>  </a>
+               
+              </div>
+              
+            </span>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <div class="header-actions">
+
+<p class="about-text" >
+    1.2. Ushbu Oferta rasmiy hujjat hisoblanadi va o‘quv markazining quyida ko‘rsatilgan
+    manzillarda joylashgan filiallarda amalga oshiriladi:
+    Andijon viloyati, Andijon shahri, Boburshox ko’chasi 66;
+    Andijon viloyati, Andijon shahri, Boburshox ko’kasi ?;
+    
+</p>
+
+        
+        <button class="header-action-btn" aria-label="open menu" data-nav-toggler>
+          <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+    
+
+      <section class="section" id="about" aria-label="about">
+        <div class="about-container">
+          <p class="section-subtitle">
+            <b>INGLIZ TILI VA NEMIS TILINI BO‘YICHA TA’LIM XIZMATLARINI TAQDIM ETISH
+                TO‘G‘RISIDA OMMAVIY OFERTA</b> <br><br> Atama va ta’riflar
+            </p>
+
+          
+
+          <p class="section-text">
+
+          </p>
+          <div class="about-content">
+
+            <div class="one-about" >
+            
+             <p class="about-text" >
+               <b>Ommaviy oferta</b>:
+               bu shartnoma tuzish bo‘yicha taklif. Shartnoma ofertani (uning akseptini) shartsiz qabul qilish orqali tuziladi.
+             </p>
+              <p class="about-text" >
+                 <b>Ofertaning aksepti </b>:
+                ushbu Ofertaning 1.3. bandiga ko‘rsatilgan harakatlarni to‘liq yoki hech qanday shartlarsiz qabul qilish. Ofertaning aksepti Shartnoma tuzilishiga sababchi bo‘ladi. <br>
+Bajaruvchi — 2023 yil 13 martda berilgan 2111566-son litsenziyaga asosan ta’lim xizmatlarini
+taqdim etuvchi yuridik shaxs.
+             </p>
+              <p class="about-text" >
+                 <b>O‘quvchi/Buyurtmachi </b>:
+                ushbu shartnoma shartlarini qabul qilgan (ushbu ofertani akseptlagan),
+                shuningdek Bajaruvchi tomonidan tashkil etilgan Ingliz tili Kurslarida ingliz tilini o‘rganayotgan
+                jismoniy shaxs, Xizmatlarning oxirgi foydalanuvchisi.
+                
+              </p>
+              <p class="about-text" >
+                 <b>“FUTURE ACCESS” NTM </b> , o‘quy markazi :
+                o‘quv jarayoni uchun zarur bo‘lgan jihozlar,
+materiallar, adabiyotlar va boshqa moddiy-texnika vositalari bilan jihozlangan, darslar bevosita
+o‘tkaziladigan maxsus o‘quv binosi.
+
+              </p>
+
+              <div class="section-subtitle">1. Umumiy qoidalar</div>
+<p class="about-text" >
+    2.1. Bajaruvchi O‘quvchi Buyurtmachining topshirig‘i bilan «FUTURE ACCESS » NTM
+    o‘quv markazida «Ingliz tili Kursi va Nemis tili Kursi» dasturi bo‘yicha ta’lim xizmatini ko‘rsatish (keyingi o‘rinlarda «Xizmatlam deb nomlanadi) O‘quvchi Buyurtmachi esa bu xizmat uchun haq to‘lash majburiyatini oladi.
+    
+  
+</p>
+<p class="about-text" >
+    1.2. Ushbu Oferta rasmiy hujjat hisoblanadi va o‘quv markazining quyida ko‘rsatilgan
+    manzillarda joylashgan filiallarda amalga oshiriladi:
+    Andijon viloyati, Andijon shahri, Boburshox ko’chasi 66;
+    Andijon viloyati, Andijon shahri, Boburshox ko’kasi ?;
+    
+</p>
+<p class="about-text" >
+    1.3. O‘quvchi/Buyurtmachi tomonidan o’z shaxsiga doir ma’lumotlarni O‘quv markaziga
+    taqdim etishi (to‘liq ism, tug‘ilgan sana, telefon raqami) levelupacademy.uz saytida amalga
+    oshiriladi, shuningdek Oferta shartlari bilan tanishib chiqish va taklifni akseptlash (tasdiqlash)
+    levelupacademy.uz saytida Oferta shartlarini qabul qilaman tugmasini bosish orgali amalga
+    oshiriladi.
+    
+    
+</p>
+<p class="about-text" >
+    1.4. O‘zbekiston Respublikasi Fuqarolik kodeksining 369 va 370-moddalari qismalariga
+    asosan, quyida ko‘rsatilgan shartlarni qabul qilib va tegishli miqdordagi to‘lov amalga oshirilsa
+    (O‘zbekiston Respublikasi Fugarolik Kodeksining 370-moddasi to‘rtinchi qismiga muvofiq, 
+    Ofertani qabul qilish Ofertada ko‘rsatilgan shartlar bo‘yicha shartnoma tuzishga tengdir), ushbu
+    Ofertani qabul qilish(akseptlash) shaxs ushbu Ofertaning Tomoniga aylanadi, bundan keyin
+    O‘quvchi/Buyurtmachi deb nomlanadi. O‘quv markazi va O‘quvchi/Buyurtmachi ham ushbu
+    Oferta bo‘yicha birgalikda Tomonlar, alohida esa Tomon deb yuritiladi.
+    
+    
+</p>
+<div class="section-subtitle">2. Shartnoma predmeti</div>
+<p class="about-text" >
+    2.1. Bajaruvchi O‘quvchi Buyurtmachining topshirig‘i bilan «FUTURE ACCESS » NTM
+o‘quv markazida «Ingliz tili Kursi va Nemis tili Kursi» dasturi bo‘yicha ta’lim xizmatini ko‘rsatish (keyingi o‘rinlarda «Xizmatlam deb nomlanadi) O‘quvchi Buyurtmachi esa bu xizmat uchun haq to‘lash majburiyatini oladi.
+
+    
+</p>
+<p class="about-text" >
+    2.2. On to‘rt yoshdan o‘n sakkiz yoshgacha bo‘lgan voyaga yetmaganlar nomidan ushbu
+Shartnomani Buyurtmachisi sifatida faqat ularning ota-onalari (voyaga yetmaganlarning qonuniy
+vakillari bo‘lishi mumkin bo‘lgan homiylar, vasiylar yoki boshqa shaxslar) tomonidan imzolanashi mumnkin.
+
+</p>
+<p class="about-text" >
+    2.3. Xizmatlar ushbu Shartnomaning ajralmas qismi hisoblanuvchi «Ingliz tili kurslari va Nemis tili kurslarida O’qitish Qoidalari»ga muvofiq ko’rsatiladi.
+    
+</p>
+<p class="about-text" >
+    2.4. | O‘quy markazi levelupacademy.uz O‘quv markazi veb-saytida e’lon qilingan amaldagi
+narxlar ro‘yxatiga muvofiq xizmatlar ko‘rsatadi va O‘quvchi/Buyurtmachi ushbu Ommaviy 
+oferta shartlariga muvofiq xizmatlar uchun to‘lovni amalga oshiradi.
+
+    
+</p>
+<div class="section-subtitle">3. Tomonlarning huquq va majburiyatlari.</div>
+<p class="about-text" >
+    3.1 O‘quv markazining huquq va majburiyatlari.
+    
+</p>
+<p class="about-text" >
+    3.1.1. O‘quv markazi ushbu Ommaviy ofertaning 2.1-bandida nazarda tutilgan xizmatlarni tashkil etish va tegishli tarzda bajarilishini ta’minlash majburiyatini oladi.
+    
+</p>
+<p class="about-text" >
+    3.1.2. O‘quv markazi O‘quvchi/Buyurtmachini bosqich yakunida sinovdan o‘tkazish va test
+natijalariga asosan uni «Ingliz tili kurslari va Nemistili kurslarida o‘qitish Qoidalari» ga muvofiq keyingi ta’lim bosqichiga o‘tkazish/joriy bosqichda qoldirish/o’qishni davom ettirishni rad etish va ushbu Ofertani bir tomonlama tartibda bekor qilishi mumkin.
+
+    
+</p>
+<p class="about-text" >
+    3.1.3. O‘quv markazi o‘qish uchun to‘lov o‘z vaqtida amalga oshirilmagan taqdirda, talabaning
+darslarga kirishini cheklash huquqiga ega.
+
+    
+</p>
+<p class="about-text" >
+    3.1.4. O‘quv markazi O‘quvchi/Buyurtmachining roziligisiz o‘qitishning butun davri davomida
+    o‘qituvchini almashtirishga huquqiga ega.
+    
+</p>
+<p class="about-text" >
+    3.1.5. O‘quv markazi, agar O‘quvchi/Buyurtmachi talab qilgan holatlarda ham, o‘qituvchini
+    almashtirmaslik huquqiga ega.
+    
+    
+</p>
+<p class="about-text" >
+    3.1.6. Dars jadvali va o‘quv mashg‘ulotlari olib boriladigan filialning o‘zgartirilishi taraflar
+    kelishuviga ko‘ra amalga oshiriladi. O‘quv xonalari va o‘quv guruhlarini o‘zgartirilishi o‘quv
+    markazi tomonidan mustaqil hal qiliniadi.
+    
+    
+</p>
+<p class="about-text" >
+    3.1.7. Agar guruhda 5 yoki 6 nafardan kam o‘quvchi qolsa, O‘quv markazi guruhni yopish va
+    o‘quvchilarni boshqa guruhlarga taqsimlash huquqiga ega.
+    
+    
+</p>
+<p class="about-text" >
+    3.1.8. Agar O‘quvchi/Buyurtmachi darslarni qoldirsa, O‘quv markazi u tomonidan qoldirilgan dars oshirgan to‘lovlarni boshqa shaxs hisobiga o‘tkazish bo‘yicha tranzaksiyalarni amalga 
+oshirmaydi.
+
+    
+</p>
+<p class="about-text" >
+    3.1.9. O‘quv markazi Talabaning IELTS va Nemis tili imtihon sertifikatlaridan faqat Buyurtmachi bilan kelishilgan holda reklama materiali sifatida foydalanish huquqiga ega.
+    
+</p>
+<p class="about-text" >
+    3.1.10. O‘quv markazi mustaqil ravishda o‘quv jarayonini amalga oshirish, baholash tizimlari,
+    O‘quvchi bilimini tekshirish shakllari, tartibi va davriyligini tanlash huquqiga ega.
+    
+    
+</p>
+<p class="about-text" >
+    3.1.11, O‘quvchi/Buyurtmachi ushbu Ofertaning amal qilish muddati davomida qonun va ushbu
+    Oferta. shartlarini buzgan bo‘lsa, O‘quv markazi O‘quvchi/Buyurtmachini darslardan
+    chetlashtirishga/shaxsiy kabinetga kirishini cheklashga haqli.
+    
+    
+</p>
+<p class="about-text" >
+    3.1.12. Agar O‘quvchi/Buyurtmachi ta’lim jarayonida O‘quv markazi xodimlarini yoki boshqa
+    O‘quvchi/Buyurtmachilarni og‘zaki yoki yozma ravishda haqorat qilganligi dalillar va guvohlar
+    orqali isbotlansa, O‘quv markazi O‘quvchi/Buyurtmachini darslardan chetlashtirishga/shaxsiy
+    kabinetga kirishini cheklash huquqiga ega.
+    
+    
+</p>
+<p class="about-text" >
+    3.1.13. O‘quv markazi tomonidan ushbu Ommaviy Ofertaga o‘zgartirilishi mumkin. Kiritilgan
+    o‘zgarishlar Ommaviy Oferta matnining bir qismi sifatida e’lon qilinishi bilan kuchga kirgan
+    hisoblanadi. Binobarin, kiritilgan eski shartnomalarga ta’sir etmaydi. O‘zgartirish kiritilgandan
+    keyin yangi shartnomalar tuzilganda yoki eski shartnomalar yangilanganda, kiritilgan
+    o‘zgartirishlar shartnomaning bir qismi hisoblanadi.
+    
+</p>
+<div class="section-subtitle">3.2. O‘quvchi/Buyurtmachining huquq va majburiyatlari.</div>
+<p class="about-text" >
+    3.2.1. O'quvchi/Buyurtmachi Shartnoma tuzilgunga qadar va to‘lov amalga oshirilgunga qadar
+ushbu oferta mazmuni va shartlari, levelupacademy.uz veb-saytida joylashtirilgan O‘quv
+markazi xizmatlari narxi bilan tanishishi shart.
+
+    
+</p>
+<p class="about-text" >
+    3.2.2. O‘quvchi/Buyurtmachi tomonidan dastlabki to‘lovni amalga  oshirish
+O‘quvchi/Buyurtmachi tomonidan ushbu Oferta shartlari bilan tanishish va qabul qilinishini
+anglatadi.
+
+    
+</p>
+<p class="about-text" >
+    3.2.3. O’quvchi/Buyurtmachi har oyning 5-sanasiga qadar o‘quv mashg‘uloti uchun to‘lovni
+    amalga oshirishga majburdir.
+    
+    
+</p>
+<p class="about-text" >
+    3.2.4. O'quvchi/Buyurtmachi o‘qituvchi tomonidan darslarga tayyorgarlik ko‘rish bo‘yicha
+    berilgan mustaqil topshiriqlarni bajarishga, tasdiqlangan jadvalga muvofiq mashg‘ulotlarda
+    ishtirok etish majbur, ushbu Oferta bo‘yicha o‘qish huquqlarini uchinchi shaxslarga o‘tkazishi
+    mumkin emas.
+    
+    
+</p>
+<p class="about-text" >
+    1.2. Ushbu Oferta rasmiy hujjat hisoblanadi va o‘quv markazining quyida ko‘rsatilgan
+    manzillarda joylashgan filiallarda amalga oshiriladi:
+    Andijon viloyati, Andijon shahri, Boburshox ko’chasi 66;
+    Andijon viloyati, Andijon shahri, Boburshox ko’kasi ?;
+    
+</p>
+<p class="about-text" >
+    1.2. Ushbu Oferta rasmiy hujjat hisoblanadi va o‘quv markazining quyida ko‘rsatilgan
+    manzillarda joylashgan filiallarda amalga oshiriladi:
+    Andijon viloyati, Andijon shahri, Boburshox ko’chasi 66;
+    Andijon viloyati, Andijon shahri, Boburshox ko’kasi ?;
+    
+</p>
+<p class="about-text" >
+    1.2. Ushbu Oferta rasmiy hujjat hisoblanadi va o‘quv markazining quyida ko‘rsatilgan
+    manzillarda joylashgan filiallarda amalga oshiriladi:
+    Andijon viloyati, Andijon shahri, Boburshox ko’chasi 66;
+    Andijon viloyati, Andijon shahri, Boburshox ko’kasi ?;
+    
+</p>
+<p class="about-text" >
+    1.2. Ushbu Oferta rasmiy hujjat hisoblanadi va o‘quv markazining quyida ko‘rsatilgan
+    manzillarda joylashgan filiallarda amalga oshiriladi:
+    Andijon viloyati, Andijon shahri, Boburshox ko’chasi 66;
+    Andijon viloyati, Andijon shahri, Boburshox ko’kasi ?;
+    
+</p>
+<p class="about-text" >
+    1.2. Ushbu Oferta rasmiy hujjat hisoblanadi va o‘quv markazining quyida ko‘rsatilgan
+    manzillarda joylashgan filiallarda amalga oshiriladi:
+    Andijon viloyati, Andijon shahri, Boburshox ko’chasi 66;
+    Andijon viloyati, Andijon shahri, Boburshox ko’kasi ?;
+    
+</p>
+<p class="about-text" >
+    1.2. Ushbu Oferta rasmiy hujjat hisoblanadi va o‘quv markazining quyida ko‘rsatilgan
+    manzillarda joylashgan filiallarda amalga oshiriladi:
+    Andijon viloyati, Andijon shahri, Boburshox ko’chasi 66;
+    Andijon viloyati, Andijon shahri, Boburshox ko’kasi ?;
+    
+</p>
+<p class="about-text" >
+    1.2. Ushbu Oferta rasmiy hujjat hisoblanadi va o‘quv markazining quyida ko‘rsatilgan
+    manzillarda joylashgan filiallarda amalga oshiriladi:
+    Andijon viloyati, Andijon shahri, Boburshox ko’chasi 66;
+    Andijon viloyati, Andijon shahri, Boburshox ko’kasi ?;
+    
+</p>
+        
+<p class="about-text" >
+    1.2. Ushbu Oferta rasmiy hujjat hisoblanadi va o‘quv markazining quyida ko‘rsatilgan
+    manzillarda joylashgan filiallarda amalga oshiriladi:
+    Andijon viloyati, Andijon shahri, Boburshox ko’chasi 66;
+    Andijon viloyati, Andijon shahri, Boburshox ko’kasi ?;
+    
+</p>
+<p class="about-text" >
+    1.2. Ushbu Oferta rasmiy hujjat hisoblanadi va o‘quv markazining quyida ko‘rsatilgan
+    manzillarda joylashgan filiallarda amalga oshiriladi:
+    Andijon viloyati, Andijon shahri, Boburshox ko’chasi 66;
+    Andijon viloyati, Andijon shahri, Boburshox ko’kasi ?;
+    
+</p>
+<p class="about-text" >
+    1.2. Ushbu Oferta rasmiy hujjat hisoblanadi va o‘quv markazining quyida ko‘rsatilgan
+    manzillarda joylashgan filiallarda amalga oshiriladi:
+    Andijon viloyati, Andijon shahri, Boburshox ko’chasi 66;
+    Andijon viloyati, Andijon shahri, Boburshox ko’kasi ?;
+    
+</p>
+<p class="about-text" >
+    1.2. Ushbu Oferta rasmiy hujjat hisoblanadi va o‘quv markazining quyida ko‘rsatilgan
+    manzillarda joylashgan filiallarda amalga oshiriladi:
+    Andijon viloyati, Andijon shahri, Boburshox ko’chasi 66;
+    Andijon viloyati, Andijon shahri, Boburshox ko’kasi ?;
+    
+</p>
+<p class="about-text" >
+    1.2. Ushbu Oferta rasmiy hujjat hisoblanadi va o‘quv markazining quyida ko‘rsatilgan
+    manzillarda joylashgan filiallarda amalga oshiriladi:
+    Andijon viloyati, Andijon shahri, Boburshox ko’chasi 66;
+    Andijon viloyati, Andijon shahri, Boburshox ko’kasi ?;
+    
+</p>
+<p class="about-text" >
+    1.2. Ushbu Oferta rasmiy hujjat hisoblanadi va o‘quv markazining quyida ko‘rsatilgan
+    manzillarda joylashgan filiallarda amalga oshiriladi:
+    Andijon viloyati, Andijon shahri, Boburshox ko’chasi 66;
+    Andijon viloyati, Andijon shahri, Boburshox ko’kasi ?;
+    
+</p>
+<p class="about-text" >
+    1.2. Ushbu Oferta rasmiy hujjat hisoblanadi va o‘quv markazining quyida ko‘rsatilgan
+    manzillarda joylashgan filiallarda amalga oshiriladi:
+    Andijon viloyati, Andijon shahri, Boburshox ko’chasi 66;
+    Andijon viloyati, Andijon shahri, Boburshox ko’kasi ?;
+    
+</p>
+<p class="about-text" >
+    1.2. Ushbu Oferta rasmiy hujjat hisoblanadi va o‘quv markazining quyida ko‘rsatilgan
+    manzillarda joylashgan filiallarda amalga oshiriladi:
+    Andijon viloyati, Andijon shahri, Boburshox ko’chasi 66;
+    Andijon viloyati, Andijon shahri, Boburshox ko’kasi ?;
+    
+</p>
+<p class="about-text" >
+    1.2. Ushbu Oferta rasmiy hujjat hisoblanadi va o‘quv markazining quyida ko‘rsatilgan
+    manzillarda joylashgan filiallarda amalga oshiriladi:
+    Andijon viloyati, Andijon shahri, Boburshox ko’chasi 66;
+    Andijon viloyati, Andijon shahri, Boburshox ko’kasi ?;
+    
+</p>
+<p class="about-text" >
+    1.2. Ushbu Oferta rasmiy hujjat hisoblanadi va o‘quv markazining quyida ko‘rsatilgan
+    manzillarda joylashgan filiallarda amalga oshiriladi:
+    Andijon viloyati, Andijon shahri, Boburshox ko’chasi 66;
+    Andijon viloyati, Andijon shahri, Boburshox ko’kasi ?;
+    
+</p>
+<p class="about-text" >
+    1.2. Ushbu Oferta rasmiy hujjat hisoblanadi va o‘quv markazining quyida ko‘rsatilgan
+    manzillarda joylashgan filiallarda amalga oshiriladi:
+    Andijon viloyati, Andijon shahri, Boburshox ko’chasi 66;
+    Andijon viloyati, Andijon shahri, Boburshox ko’kasi ?;
+    
+</p>
+
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+
+
+
+
+
+  <footer  class="footer" style="background-image: url({% static 'images/footer-bg.png' %}")>
+
+    <div id="footer" class="footer-top section">
+      <div class="container grid-list">
+
+        <div class="footer-brand">
+
+          <a href="#" class="logo">
+            <img src="{% static 'images/logo.png' %}" width="50" height="25" alt="LevelUp logo">
+          </a>
+
+
+
+          <div class="wrapper">
+            <span class="span">Address:</span>
+
+            <address class="address">Andijan</address>
+          </div>
+
+          <div class="wrapper">
+            <span class="span">Call:</span>
+
+            <a href="tel:+998951100014" class="footer-link">+998 95 110 00 14</a>
+          </div>
+          
+
+          <div class="wrapper">
+            <span class="span">Email:</span>
+
+            <a href="mailto:levelupacademyuz1@gmail.com" class="footer-link">levelupacademyuz@gmail.com</a>
+          </div>
+
+        </div>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Online Platform</p>
+          </li>
+
+          <li>
+            <a href="#about" class="footer-link">About</a>
+          </li>
+
+          <li>
+            <a href="#courses" class="footer-link">Courses</a>
+          </li>
+
+          <li>
+            <a href="" class="footer-link">Instructor</a>
+          </li>
+
+          <li>
+            <a href="" class="footer-link">Events</a>
+          </li>
+
+
+
+
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Links</p>
+          </li>
+
+          <li>
+            <a href="" class="footer-link">Contact Us</a>
+          </li>
+
+          <li>
+            <a href="" class="footer-link">Gallery</a>
+          </li>
+
+          <li>
+            <a href="" class="footer-link">News & Articles</a>
+          </li>
+
+          <li>
+            <a href="" class="footer-link">FAQ's</a>
+          </li>
+
+          <li>
+            <a href="{% url 'login' %}" class="footer-link">Sign In/Registration</a>
+          </li>
+
+          <li>
+            <a href="" class="footer-link">Coming Soon</a>
+          </li>
+
+        </ul>
+
+        <div class="footer-list">
+
+          <p class="footer-list-title">Contacts</p>
+
+
+
+          <ul class="social-list">
+
+            <li>
+              <a href="" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="" class="social-link">
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="" class="social-link">
+                <ion-icon name="logo-youtube"></ion-icon>
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+          Copyright 2023 All Rights Reserved by <a href="#" class="copyright-link">Level Up</a>
+        </p>
+
+      </div>
+    </div>
+
+  </footer>
+
+
+
+
+
+  <!--
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn" aria-label="back top top" data-back-top-btn>
+    <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+  </a>
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+ 
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script src="{% static 'js/swiper-bundle.min.js' %}"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/micro-slider@1.0.9/dist/micro-slider.min.js"></script>
+  <script src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
+</body>
+
+</html>

@@ -1,0 +1,71 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/test.css' %}">
+    <link
+    href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700;800&family=Poppins:wght@400;500&display=swap"
+    rel="stylesheet">
+</head>
+<body>
+    <div class="navbar-test">
+        <img  class="logo-test" src="{% static 'images/logo.png' %}" >
+    </div>
+    <div class="test-cotainer">
+      <div class="test-block">
+            <form method="post" class="t-form" >
+                {% csrf_token %}
+                <div class="q-head">
+                    <div class="inp-data">
+                        <input required type="text" class="t-input" name="first_name" placeholder="Firstname" >
+
+                    </div>
+                    <div class="inp-data">
+                        <input required type="text" class="t-input" name="last_name" placeholder="Lastname" >
+
+                    </div>
+                    <div class="inp-data">
+                        <input required type="text" value="+998" class="t-input" name="phone_number" placeholder="+998" >
+
+                    </div>
+                </div>
+                {% for q in questions %}
+                <div class="q-body">
+                    <div class="q-block">
+                        <div class="q-text">{{ forloop.counter }}) {{ q.question }}</div>
+                        <div class="a-block">
+                           <div class="a-row">
+                            <input type="radio" value="a"  name="{{ q.id }}" id="{{ q.id }}-a" >
+                            <label for="{{ q.id }}-a">{{q.a}}</label>
+                           </div>
+                           <div class="a-row">
+                            <input type="radio" value="b"  name="{{ q.id }}" id="{{ q.id }}-b" >
+                            <label for="{{ q.id }}-b">{{q.b}}</label>
+                           </div>
+                           <div class="a-row">
+                            <input type="radio" value="c"  name="{{ q.id }}" id="{{ q.id }}-c" >
+                            <label for="{{ q.id }}-c">{{q.c}}</label>
+                           </div>
+                           <div class="a-row">
+                            <input type="radio" value="d"  name="{{ q.id }}" id="{{ q.id }}-d" >
+                            <label for="{{ q.id }}-d">{{q.d}}</label>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+
+                <div class="q-footer">
+                    <button type="submit" >Send</button>
+                </div>
+            </form>
+      </div>
+
+       </div>
+    </div>
+</body>
+</html>

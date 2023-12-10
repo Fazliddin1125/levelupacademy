@@ -177,6 +177,35 @@ body {
   #REUSED STYLE
 \*-----------------------------------*/
 
+#l-link{
+  position: relative;
+  /* background-color: #5ddcff; */
+}
+#l-link img{
+ width: 25px;
+ margin-left: 10px;
+text-align: center;
+}
+.def-lang, .set-lang{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+text-align: center;
+}
+.box-lang{
+  position: absolute;
+  background-color: #5ddcff;
+  height: 0;
+  overflow: hidden;
+  text-align: center;
+}
+
+.def-lang:hover + .box-lang{
+  overflow: visible;
+}
+.box-lang:hover{
+  overflow: visible;
+}
 .badge{
 padding: 10px
 }
@@ -184,13 +213,25 @@ padding: 10px
   height: 100vh;
 }
 .about-content{
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 25px;
 
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 0 30px;
 }
 
+.one-about{
+gap: 2rem;
+
+width: 80%;
+margin: auto;
+padding: 1.5rem 4rem;
+}
+
+.about-text{
+padding: 1rem;
+margin: 1rem 0;
+}
 .about-container{
   padding: 2rem;
 }
@@ -424,6 +465,7 @@ padding: 10px
   color: var(--kappel) !important;
 }
 
+
 .navbar-link:is(:hover, :focus) { color: var(--kappel); }
 
 .overlay {
@@ -500,6 +542,8 @@ padding: 10px
   padding: 50px 30px;
   text-align: center;
   border-radius: var(--radius-5);
+  height: 400px;
+
 }
 
 .category-card .card-icon {
@@ -608,6 +652,7 @@ padding: 10px
   background-color: var(--white);
   border-radius: var(--radius-5);
   overflow: hidden;
+
 }
 
 .course-card .img-cover { transition: var(--transition-2); }
@@ -1764,6 +1809,13 @@ background: #e4e5e6;
   .slide-content {
     margin: 0 10px;
   }
+.one-about{
+
+
+width: 100%;
+margin: auto;
+padding: 1.5rem 0;
+}
 
   .swiper-nav-btn {
     display: none;
@@ -1912,6 +1964,14 @@ h3 {
   .inner {
     width: 100%;
     left: 0; }
+
+ .one-about{
+
+
+width: 100%;
+margin: auto;
+padding: 1.5rem 0;
+}
 
   .image-1, .image-2 {
     display: none; }

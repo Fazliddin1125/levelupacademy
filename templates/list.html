@@ -1,0 +1,102 @@
+
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/test.css' %}">
+    <link
+    href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700;800&family=Poppins:wght@400;500&display=swap"
+    rel="stylesheet">
+</head>
+<body>
+    <div class="navbar-test">
+        <img  class="logo-test" src="{% static 'images/logo.png' %}" >
+    </div>
+    <div class="test-cotainer">
+      <div class="test-block1">
+            <div class="a-form" >
+                <div class="a-title">Test results</div>
+              {% for check_test in checks %}
+              
+              <div class="q-check">
+                <div class="part1">
+                    <div class="inp-data">
+                        {{ check_test.first_name }}
+                    </div>
+                    <div class="inp-data">
+                        {{ check_test.last_name }}
+                    </div>
+                    <div class="inp-data">
+                        {{ check_test.phone_number  }}
+                    </div>
+                    <div class="inp-data">
+                        {{ check_test.created_at }}
+                    </div>
+                </div>
+                <div class="part1">
+                    <div class="inp-data">
+                        Percentage: {{ check_test.percentage }}%
+                    </div>
+                    <div class="inp-data">
+                        True answers: {{ check_test.found_question }}
+                    </div>
+                    <div class="inp-data">
+                        Level: {{ check_test.level }}
+                    </div>
+                    <div class="inp-data">
+                        Test: {{ check_test.test }}
+                    </div>
+                </div>
+            </div>
+              {% endfor %}
+                
+
+                
+
+              
+            </div>
+            <div class="a-form" >
+                <div class="a-title">New students</div>
+               {% for customer in customers %}
+               <div class="q-check">
+                <div class="part1">
+                    <div class="inp-data">
+                        {{ customer.name }}
+                    </div>
+                    <div class="inp-data">
+                        {{ customer.phone_number }}
+                    </div>
+                    <div class="inp-data">
+                        {{ customer.email  }}
+                    </div>
+                </div>
+                <div class="part1">
+                    <div class="inp-data">
+                        Course:  {{ customer.course }}
+                    </div>
+                    <div class="inp-data">
+                        Action:    {{ customer.checked }}
+                    </div>
+                    <div class="inp-data">
+                        Created at:  {{ customer.created_at }}
+                    </div>
+                    
+                </div>
+            </div>
+               {% endfor %}
+                
+
+                
+
+              
+            </div>
+      </div>
+
+       </div>
+    </div>
+</body>
+</html>

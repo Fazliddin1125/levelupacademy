@@ -1,0 +1,106 @@
+
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/test.css' %}">
+    <link
+    href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700;800&family=Poppins:wght@400;500&display=swap"
+    rel="stylesheet">
+</head>
+<body>
+    <div class="navbar-test">
+        <img  class="logo-test" src="{% static 'images/logo.png' %}" >
+    </div>
+    <div class="test-cotainer">
+      <div class="test-block">
+            <div class="t-form" >
+                
+               <div class="q-check">
+                    <div class="part1">
+                        <div class="inp-data">
+                            {{ check_test.first_name }}
+                        </div>
+                        <div class="inp-data">
+                            {{ check_test.last_name }}
+                        </div>
+                        <div class="inp-data">
+                            {{ check_test.phone_number  }}
+                        </div>
+                    </div>
+                    <div class="part1">
+                        <div class="inp-data">
+                            Percentage: {{ check_test.percentage }}%
+                        </div>
+                        <div class="inp-data">
+                            True answers: {{ check_test.found_question }}
+                        </div>
+                        <div class="inp-data">
+                            Level: {{ level }}
+                        </div>
+                    </div>
+                </div>
+                {% for check_question in check_questions %}
+                {% if check_question.is_true == True %}
+                <div class="q-true">
+                    <div class="q-block">
+                        <div class="q-text">{{ forloop.counter }}) {{ check_question.question }}</div>
+                        <div class="a-block">
+                           <div class="a-row">
+                            <input readonly type="radio" value="a"  name="a" id="{{ check_question.id}}-a" >
+                            <label for="{{ check_question.id}}-a">{{ check_question.question.a }}</label>
+                           </div>
+                           <div class="a-row">
+                           <input readonly type="radio" value="b"  name="a" id="{{ check_question.id}}-b" >
+                            <label for="{{ check_question.id}}-b">{{ check_question.question.b }}</label>
+                           </div>
+                           <div class="a-row">
+                           <input readonly type="radio" value="c"  name="c" id="{{ check_question.id}}-c" >
+                            <label for="{{ check_question.id}}-c">{{ check_question.question.c }}</label>
+                           </div>
+                           <div class="a-row">
+                            <input readonly type="radio" value="d"  name="d" id="{{ check_question.id}}-d" >
+                            <label for="{{ check_question.id}}-d">{{ check_question.question.d }}</label>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+                {% else %}
+                  <div class="q-false">
+                    <div class="q-block">
+                        <div class="q-text">{{ forloop.counter }}) {{ check_question.question }}</div>
+                        <div class="a-block">
+                           <div class="a-row">
+                            <input readonly type="radio" value="a"  name="a" id="{{ check_question.id}}--a" >
+                            <label for="{{ check_question.id}}-a">{{ check_question.question.a }}</label>
+                           </div>
+                           <div class="a-row">
+                           <input readonly type="radio" value="b"  name="a" id="{{ check_question.id}}--b" >
+                            <label for="{{ check_question.id}}--b">{{ check_question.question.b }}</label>
+                           </div>
+                           <div class="a-row">
+                           <input readonly type="radio" value="c"  name="c" id="{{ check_question.id}}--c" >
+                            <label for="{{ check_question.id}}--c">{{ check_question.question.c }}</label>
+                           </div>
+                            <div class="a-row">
+                            <input readonly type="radio" value="d"  name="d" id="{{ check_question.id}}--d" >
+                            <label for="{{ check_question.id}}--d">{{ check_question.question.d }}</label>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+                {% endif %}
+                {% endfor %}
+
+              
+            </div>
+      </div>
+
+       </div>
+    </div>
+</body>
+</html>

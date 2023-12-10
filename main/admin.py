@@ -2,7 +2,9 @@ from django.contrib import admin
 from .models import Course, Customer
 # Register your models here.
 
-
+from .models import CheckTest, CheckQuestion, Question, Test, Category
+# Register your models here.
+admin.site.register([CheckQuestion, CheckTest, Question, Test, Category])
 @admin.register(Course)
 class CourseAdmin(admin.ModelAdmin):
     list_display = ['name']

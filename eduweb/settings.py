@@ -27,7 +27,7 @@ SECRET_KEY = config('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = config('DEBUG', default=False, cast=bool)
 
-ALLOWED_HOSTS = ['levelupacademy.uz', 'www.levelupacademy.uz', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['levelupacademy.uz', 'www.levelupacademy.uz', 'localhost', '127.0.0.1', '192.168.77.172']
 
 
 # Application definition
@@ -127,7 +127,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Asia/Tashkent'
 
 USE_I18N = True
 
@@ -138,13 +138,23 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
 STATIC_URL = 'static/'
-STATICFILES_DIRS = [BASE_DIR / 'static']
+# STATICFILES_DIRS = [BASE_DIR / 'static']
 STATIC_ROOT = BASE_DIR / 'staticfiles'
+# STATIC_URL = 'static/'
+
+STATICFILES_DIRS = [
+    BASE_DIR / "static",
+
+]
 STATICFILES_FINDERS = [
     'django.contrib.staticfiles.finders.FileSystemFinder',
     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
 ]
 STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
+
+# STATIC_URL = '/static/'
+# STATIC_ROOT = '/home/levelupa/levelupacademy.uz/django/staticfiles'
+# STATICFILES_DIRS = ('/home/levelupa/levelupacademy.uz/django/static', )
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
